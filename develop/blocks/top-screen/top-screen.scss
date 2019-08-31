@@ -7,6 +7,86 @@
 
     font-family: $font;
 
+    .logo-new {
+        position: absolute;
+        top: -170px;
+
+        a {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            text-decoration: none;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 29px;
+                height: 33px;
+                background: url(https://skill-branch.ru/_nuxt/img/x8f40755.png.pagespeed.ic.A__sdGF90z.webp) 50% 50%
+                    no-repeat;
+                background-size: cover;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .login-wrap {
+        position: absolute;
+        top: -170px;
+        right: 0;
+        width: 105px;
+    }
+
+    .login-trigger {
+        display: block;
+        position: relative;
+        width: 100%;
+        padding: 10px 15px;
+        font-weight: 700;
+        line-height: 16px;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 25px;
+        background: hsla(0, 0%, 78.4%, 0.3);
+        transition: 0.3s;
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            width: 15px;
+            margin-right: 5px;
+
+            svg {
+                fill: #fff;
+                transition: 0.3s;
+            }
+        }
+
+        #icon-user-icon path {
+            transition: all 0.3s linear;
+        }
+
+        &:hover {
+            background-color: #fff;
+            color: #1c0e42;
+            #icon-user-icon path {
+                fill: #1c0e42 !important;
+            }
+        }
+
+        &:active {
+            background: #fc4c4c;
+            color: #fff;
+        }
+    }
+
     &__content {
         position: relative;
     }
@@ -49,7 +129,6 @@
         @include btn-theme(bright);
         margin: 20px 0 70px;
         max-width: 215px;
-        padding: 16px;
     }
 
     &__date {
@@ -146,6 +225,15 @@
 @media (max-width: 1200px) {
     .top-screen {
         overflow: hidden;
+
+        .login-wrap {
+            display: none;
+        }
+
+        .logo-new {
+            top: -160px;
+        }
+
         &__title {
             max-width: 750px;
             font-size: 48px;
@@ -163,7 +251,11 @@
 @media (max-width: 992px) {
     .top-screen {
         padding-top: 100px;
-        padding-bottom: 60px;
+        padding-bottom: 100px;
+
+        .logo-new {
+            top: -70px;
+        }
 
         &__title {
             max-width: 600px;
@@ -210,7 +302,17 @@
 
 @media (max-width: 768px) {
     .top-screen {
-        padding-top: 60px;
+        padding-bottom: 60px;
+        background-position: 70% 50%;
+
+        .logo-new {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &__ball-decor {
+            display: none;
+        }
 
         &__title {
             max-width: none;
@@ -232,7 +334,7 @@
         }
 
         &__appeal {
-            margin: 0 auto 25px;
+            margin: 0 auto 50px;
         }
 
         &__date {
@@ -242,7 +344,7 @@
             margin: 0 auto 25px;
 
             .date-in-circle {
-                position: relative; 
+                position: relative;
                 top: 0;
                 left: 0;
                 margin: 0 auto;

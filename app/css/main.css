@@ -3702,14 +3702,15 @@ template {
        -moz-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 12px;
-    font-size: 12px;
+    padding: 18px;
+    max-width: 250px;
+    font-size: 14px;
     text-align: center;
     font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: #ffffff;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
     text-decoration: none;
     border: none;
@@ -3748,15 +3749,16 @@ template {
     .certificate__image::before {
       content: '';
       position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
+      width: 90%;
+      height: 130%;
+      left: 5%;
+      top: -15%;
       background: -webkit-radial-gradient(68.32% 38.38% 441.01px, rgba(255, 70, 137, 0.5) 0%, rgba(233, 44, 123, 0.5) 34.25%, rgba(116, 0, 83, 0.5) 100%);
       background: -moz- oldradial-gradient(68.32% 38.38% 441.01px, rgba(255, 70, 137, 0.5) 0%, rgba(233, 44, 123, 0.5) 34.25%, rgba(116, 0, 83, 0.5) 100%);
       background: radial-gradient(441.01px at 68.32% 38.38%, rgba(255, 70, 137, 0.5) 0%, rgba(233, 44, 123, 0.5) 34.25%, rgba(116, 0, 83, 0.5) 100%);
-      -webkit-filter: blur(250px);
-              filter: blur(250px); }
+      -webkit-filter: blur(50px);
+              filter: blur(50px);
+      border-radius: 50%; }
     .certificate__image img {
       position: relative;
       z-index: 1;
@@ -3789,9 +3791,17 @@ template {
     width: 45%; }
   .certificate__heading {
     margin-bottom: 25px;
-    font-size: 32px; }
+    font-size: 32px;
+    text-align: center; }
+  .certificate__highlight {
+    text-align: center; }
   .certificate__text {
-    font-size: 16px; } }
+    font-size: 16px;
+    text-align: center; }
+  .certificate__button {
+    margin: 0 auto; }
+  .certificate__image {
+    margin: 0 auto; } }
 
 @media (max-width: 992px) {
   .certificate__ball-decor {
@@ -3835,7 +3845,8 @@ template {
     font-size: 18px; } }
 
 .discount {
-  display: inline-block;
+  display: block;
+  max-width: 650px;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 6px;
@@ -3887,7 +3898,6 @@ template {
 
 @media (max-width: 768px) {
   .discount {
-    display: block;
     min-width: 280px;
     max-width: 360px;
     margin: 0 auto 25px; }
@@ -3895,6 +3905,7 @@ template {
       display: block; }
     .discount__price {
       padding: 10px;
+      padding-top: 25px;
       text-align: center; }
     .discount__timer {
       max-width: none; } }
@@ -4038,14 +4049,15 @@ template {
        -moz-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 12px;
-    font-size: 12px;
+    padding: 18px;
+    max-width: 250px;
+    font-size: 14px;
     text-align: center;
     font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: #ffffff;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
     text-decoration: none;
     border: none;
@@ -4061,8 +4073,7 @@ template {
     -webkit-box-flex: 0;
        -moz-box-flex: 0;
         -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    padding: 17px 35px; }
+            flex: 0 0 auto; }
     .prefooter-form__submit:hover, .prefooter-form__submit:focus {
       background-image: -webkit-linear-gradient(54.07deg, #ff5954 -15.98%, #ff5e5e 105.02%);
       background-image: -moz- oldlinear-gradient(54.07deg, #ff5954 -15.98%, #ff5e5e 105.02%);
@@ -4115,19 +4126,6 @@ template {
   font-family: "Roboto Mono", Helvetica, Arial, sans-serif; }
   .prefooter__content {
     position: relative; }
-  .prefooter__ball-decor {
-    position: absolute;
-    width: 61px;
-    height: 61px;
-    left: 35%;
-    top: -90px;
-    background: #fc4c4c;
-    background: -webkit-radial-gradient(68.32% 38.38% 45.06px, #ff7171 0%, #ff5555 34.25%, #dd0700 100%);
-    background: -moz- oldradial-gradient(68.32% 38.38% 45.06px, #ff7171 0%, #ff5555 34.25%, #dd0700 100%);
-    background: radial-gradient(45.06px at 68.32% 38.38%, #ff7171 0%, #ff5555 34.25%, #dd0700 100%);
-    -webkit-box-shadow: -10px 34px 74px rgba(144, 50, 238, 0.3), 10px 14px 44px rgba(255, 0, 0, 0.3);
-            box-shadow: -10px 34px 74px rgba(144, 50, 238, 0.3), 10px 14px 44px rgba(255, 0, 0, 0.3);
-    border-radius: 50%; }
   .prefooter__title {
     max-width: 900px;
     margin: 0 0 20px;
@@ -4153,8 +4151,8 @@ template {
     margin-right: 45px; }
   .prefooter__date {
     position: absolute;
-    top: -220px;
-    right: -150px;
+    top: -360px;
+    right: -190px;
     width: 490px;
     height: 490px; }
   .prefooter__date-decor {
@@ -4185,8 +4183,8 @@ template {
       border-radius: 50%; }
   .prefooter .date-in-circle {
     position: absolute;
-    right: 240px;
-    top: 320px;
+    left: -125px;
+    top: 85%;
     width: 233px;
     height: 233px;
     background: -webkit-radial-gradient(68.32% 38.38% 172.12px, #ff7171 0, #f55 34.25%, #dd0700 100%);
@@ -4267,12 +4265,12 @@ template {
 
 @media (max-width: 1200px) {
   .prefooter__date {
-    top: -150px;
-    right: -2%;
+    top: -220px;
+    right: -20%;
     width: 360px;
     height: 360px; }
     .prefooter__date .date-in-circle {
-      right: 20px;
+      left: -70px;
       top: 230px;
       width: 190px;
       height: 190px; } }
@@ -4286,8 +4284,8 @@ template {
     .prefooter__subtitle {
       max-width: 390px; }
     .prefooter__date {
-      top: -130px;
-      right: 30px;
+      top: -150px;
+      right: -180px;
       width: 280px;
       height: 280px; }
     .prefooter__date-decor::before {
@@ -4297,10 +4295,10 @@ template {
     .prefooter .date-in-circle {
       width: 150px;
       height: 150px;
-      right: -60px;
-      top: -webkit-calc(50% - 35px);
-      top: -moz-calc(50% - 35px);
-      top: calc(50% - 35px); }
+      left: -50px;
+      top: -webkit-calc(50% + 35px);
+      top: -moz-calc(50% + 35px);
+      top: calc(50% + 35px); }
       .prefooter .date-in-circle__month {
         font-size: 24px; }
       .prefooter .date-in-circle__year {
@@ -4346,16 +4344,16 @@ template {
 @media (max-width: 480px) {
   .prefooter {
     padding-top: 35px;
-    padding-bottom: 35px; }
+    padding-bottom: 35px;
+    background-position: 50% 50%; }
     .prefooter__title {
       font-size: 30px; }
     .prefooter__subtitle {
-      font-size: 16px; }
-    .prefooter__ball-decor {
-      display: none; } }
+      font-size: 16px; } }
 
 .socials {
   font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
+  position: relative;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -4367,6 +4365,19 @@ template {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   border-top: 1px solid rgba(255, 255, 255, 0.3); }
+  .socials::after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    width: -webkit-calc(100% - 30px);
+    width: -moz-calc(100% - 30px);
+    width: calc(100% - 30px);
+    height: 25px;
+    background: url(https://skill-branch.ru/_nuxt/img/b461c1c.svg) 50% 50% repeat-x;
+    background-size: 100%;
+    width: 100%;
+    left: 0;
+    bottom: -75px; }
   .socials__title {
     margin: 0;
     -webkit-box-flex: 1;
@@ -4436,6 +4447,8 @@ template {
   .socials {
     display: block;
     border-top: none; }
+    .socials::after {
+      bottom: -60px; }
     .socials__title {
       padding: 10px 0;
       margin-bottom: 10px;
@@ -4448,6 +4461,8 @@ template {
         border-left: none; } }
 
 @media (max-width: 768px) {
+  .socials::after {
+    bottom: -40px; }
   .socials__title {
     text-align: center; } }
 
@@ -4573,7 +4588,7 @@ template {
   .timer-component {
     display: block;
     width: 100%;
-    padding: 0 10px 10px; }
+    padding: 0 10px 25px; }
     .timer-component__description {
       width: 100%;
       text-align: center; } }
@@ -4584,6 +4599,76 @@ template {
   background-image: url("../images/top-screen/bg.jpg");
   background-size: cover;
   font-family: "Roboto Mono", Helvetica, Arial, sans-serif; }
+  .top-screen .logo-new {
+    position: absolute;
+    top: -170px; }
+    .top-screen .logo-new a {
+      color: #fff;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+         -moz-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 20px;
+      text-decoration: none; }
+      .top-screen .logo-new a::before {
+        content: '';
+        display: inline-block;
+        width: 29px;
+        height: 33px;
+        background: url(https://skill-branch.ru/_nuxt/img/x8f40755.png.pagespeed.ic.A__sdGF90z.webp) 50% 50% no-repeat;
+        background-size: cover;
+        margin-right: 10px; }
+  .top-screen .login-wrap {
+    position: absolute;
+    top: -170px;
+    right: 0;
+    width: 105px; }
+  .top-screen .login-trigger {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 10px 15px;
+    font-weight: 700;
+    line-height: 16px;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    background: rgba(200, 200, 200, 0.3);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s; }
+    .top-screen .login-trigger span {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      top: -2px;
+      width: 15px;
+      margin-right: 5px; }
+      .top-screen .login-trigger span svg {
+        fill: #fff;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        transition: 0.3s; }
+    .top-screen .login-trigger #icon-user-icon path {
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+    .top-screen .login-trigger:hover {
+      background-color: #fff;
+      color: #1c0e42; }
+      .top-screen .login-trigger:hover #icon-user-icon path {
+        fill: #1c0e42 !important; }
+    .top-screen .login-trigger:active {
+      background: #fc4c4c;
+      color: #fff; }
   .top-screen__content {
     position: relative; }
   .top-screen__ball-decor {
@@ -4627,14 +4712,15 @@ template {
        -moz-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 12px;
-    font-size: 12px;
+    padding: 18px;
+    max-width: 250px;
+    font-size: 14px;
     text-align: center;
     font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: #ffffff;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
     text-decoration: none;
     border: none;
@@ -4647,8 +4733,7 @@ template {
     -moz-transition: all 300ms ease;
     transition: all 300ms ease;
     margin: 20px 0 70px;
-    max-width: 215px;
-    padding: 16px; }
+    max-width: 215px; }
     .top-screen__appeal:hover, .top-screen__appeal:focus {
       background-image: -webkit-linear-gradient(54.07deg, #ff5954 -15.98%, #ff5e5e 105.02%);
       background-image: -moz- oldlinear-gradient(54.07deg, #ff5954 -15.98%, #ff5e5e 105.02%);
@@ -4767,6 +4852,10 @@ template {
 @media (max-width: 1200px) {
   .top-screen {
     overflow: hidden; }
+    .top-screen .login-wrap {
+      display: none; }
+    .top-screen .logo-new {
+      top: -160px; }
     .top-screen__title {
       max-width: 750px;
       font-size: 48px; }
@@ -4779,7 +4868,9 @@ template {
 @media (max-width: 992px) {
   .top-screen {
     padding-top: 100px;
-    padding-bottom: 60px; }
+    padding-bottom: 100px; }
+    .top-screen .logo-new {
+      top: -70px; }
     .top-screen__title {
       max-width: 600px;
       font-size: 40px; }
@@ -4810,7 +4901,16 @@ template {
 
 @media (max-width: 768px) {
   .top-screen {
-    padding-top: 60px; }
+    padding-bottom: 60px;
+    background-position: 70% 50%; }
+    .top-screen .logo-new {
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+         -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    .top-screen__ball-decor {
+      display: none; }
     .top-screen__title {
       max-width: none;
       font-size: 36px;
@@ -4823,7 +4923,7 @@ template {
       font-size: 16px;
       text-align: center; }
     .top-screen__appeal {
-      margin: 0 auto 25px; }
+      margin: 0 auto 50px; }
     .top-screen__date {
       position: static;
       width: 100%;

@@ -1,6 +1,17 @@
 mixin top-screen()
     +b.SECTION.top-screen
         +inner
+            .logo-new
+                .logo-wrap
+                    a.logo-new__title(href="/") Skill-Branch
+            .login-wrap
+                a.login-trigger(href="/auth")
+                    span
+                        svg#icon-user-icon.icon.icon-about-profession-1(viewbox="0 0 32 32")
+                            path(fill="#fff" d="M31.906 32h-31.906c0.629-7.671 7.531-13.714 15.953-13.714s15.324 6.043 15.953 13.714z" style="fill: var(--color4, #fff);")
+                            path(fill="#fff" d="M22.857 6.857c0 3.787-3.070 6.857-6.857 6.857s-6.857-3.070-6.857-6.857c0-3.787 3.070-6.857 6.857-6.857s6.857 3.070 6.857 6.857z" style="fill: var(--color4, #fff);")
+                        
+                    | Вход
             +e.content
                 +e.ball-decor
                 

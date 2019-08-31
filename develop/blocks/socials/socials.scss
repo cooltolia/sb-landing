@@ -1,9 +1,23 @@
 .socials {
     font-family: $font;
 
+    position: relative;
     display: flex;
     flex-flow: row nowrap;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 15px;
+        width: calc(100% - 30px);
+        height: 25px;
+        background: url(https://skill-branch.ru/_nuxt/img/b461c1c.svg) 50% 50% repeat-x;
+        background-size: 100%;
+        width: 100%;
+        left: 0;
+        bottom: -75px;
+    }
 
     &__title {
         margin: 0;
@@ -37,14 +51,14 @@
         justify-content: center;
 
         color: #fff;
-        
+
         transition: color 300ms ease;
 
         svg {
             width: 24px;
             height: 24px;
             fill: #fff;
-            
+
             transition: fill 300ms ease;
         }
 
@@ -64,6 +78,10 @@
     .socials {
         display: block;
         border-top: none;
+
+        &::after {
+            bottom: -60px;
+        }
 
         &__title {
             padding: 10px 0;
@@ -88,6 +106,9 @@
 
 @media (max-width: 768px) {
     .socials {
+        &::after {
+            bottom: -40px;
+        }
         &__title {
             text-align: center;
         }

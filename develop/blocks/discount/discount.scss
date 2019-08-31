@@ -1,5 +1,6 @@
 .discount {
-    display: inline-block;
+    display: block;
+    max-width: 650px;
 
     background: hsla(0, 0%, 100%, 0.06);
     border: 1px solid hsla(0, 0%, 100%, 0.12);
@@ -55,7 +56,6 @@
 
 @media (max-width: 768px) {
     .discount {
-        display: block;
         min-width: 280px;
         max-width: 360px;
         margin: 0 auto 25px;
@@ -66,6 +66,7 @@
 
         &__price {
             padding: 10px;
+            padding-top: 25px;
 
             text-align: center;
         }
