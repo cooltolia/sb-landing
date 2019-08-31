@@ -1,0 +1,77 @@
+.discount {
+    display: inline-block;
+
+    background: hsla(0, 0%, 100%, 0.06);
+    border: 1px solid hsla(0, 0%, 100%, 0.12);
+    border-radius: 6px;
+
+    font-family: $font;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__price {
+        padding: 20px 35px;
+    }
+
+    &__new-price {
+        display: block;
+
+        font-size: 30px;
+        line-height: 1;
+        color: #fe384d;
+        text-shadow: -10px 14px 44px rgba(144, 50, 238, 0.5), 10px 14px 34px rgba(255, 0, 0, 0.3);
+        @include gradient-text;
+    }
+
+    &__prev-price {
+        display: inline-block;
+        position: relative;
+
+        color: #fff;
+        font-weight: 700;
+        line-height: 16px;
+        font-size: 14px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: -5%;
+            top: 50%;
+            width: 110%;
+            height: 2px;
+            background: #fc4c4c;
+        }
+    }
+
+    &__timer {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+}
+
+@media (max-width: 768px) {
+    .discount {
+        display: block;
+        min-width: 280px;
+        max-width: 360px;
+        margin: 0 auto 25px;
+
+        &__inner {
+            display: block;
+        }
+
+        &__price {
+            padding: 10px;
+
+            text-align: center;
+        }
+
+        &__timer {
+            max-width: none;
+        }
+    }
+}

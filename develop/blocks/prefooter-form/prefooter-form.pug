@@ -1,0 +1,13 @@
+mixin prefooter-form()
+    +b.FORM.prefooter-form
+        +e.input-row
+            +e.input-block
+                +e.INPUT.input(type='text' name='prefooter_name' placeholder='Имя')
+            +e.input-block
+                +e.INPUT.input(type='text' name='prefooter_phone' placeholder='Телефон')
+        +e.input-row
+            +e.input-block
+                +e.INPUT.input(type='email' name='prefooter_email' placeholder='E-mail')
+        +e.footer
+            +e.BUTTON.submit(type='submit') Отправить
+            +e.P.legal Нажимая на кнопку вы соглашаетесь с условиями обработки персональных данных

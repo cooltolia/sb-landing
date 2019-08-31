@@ -1,0 +1,81 @@
+.timer-component {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 60px 20px 0;
+
+    &__description {
+        width: 125px;
+        margin: 0;
+        margin-right: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .timer {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        flex-basis: 70%;
+        margin-left: auto;
+
+        &__scope {
+            flex: 0 0 20%;
+            max-width: 25%;
+            margin-right: 10px;
+            text-align: center;
+
+            &:last-child {
+                margin-right: 0;
+
+                .timer__count::after {
+                    display: none;
+                }
+            }
+        }
+
+        &__count {
+            display: block;
+            position: relative;
+            margin-bottom: 5px;
+            font-weight: 700;
+            line-height: 30px;
+            font-size: 30px;
+            text-align: center;
+            color: #fe384d;
+            text-shadow: -10px 14px 44px rgba(144, 50, 238, 0.5), 10px 14px 34px rgba(255, 0, 0, 0.3);
+
+            &::after {
+                content: ':';
+                position: absolute;
+                top: 0;
+                right: -15px;
+            }
+        }
+
+        &__label {
+            color: #fff;
+            font-weight: 700;
+            line-height: 16px;
+            font-size: 14px;
+            text-align: center;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .timer-component {
+        display: block;
+        width: 100%;
+        padding: 0 10px 10px;
+
+        &__description {
+            width: 100%;
+
+            text-align: center;
+        }
+    }
+}
