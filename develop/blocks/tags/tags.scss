@@ -47,7 +47,11 @@
 
 @media (max-width: 480px) {
     .tags {
+        flex-wrap: wrap;
+        justify-content: center;
+        
         &__item {
+            margin-bottom: 12px;
             font-size: 12px;
         }
     }
