@@ -4518,15 +4518,16 @@ template {
 
 @media (max-width: 480px) {
   .tags {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: center;
        -moz-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
     .tags__item {
       margin-bottom: 12px;
-      font-size: 12px; } }
+      font-size: 11px;
+      padding: 0 5px; }
+      .tags__item--active::before {
+        left: -6px; } }
 
 .timer-component {
   display: -webkit-box;
@@ -4609,6 +4610,7 @@ template {
   background-size: cover;
   font-family: "Roboto Mono", Helvetica, Arial, sans-serif; }
   .top-screen .logo-new {
+    min-width: 200px;
     position: absolute;
     top: -170px; }
     .top-screen .logo-new a {
