@@ -3805,15 +3805,19 @@ template {
 @media (max-width: 480px) {
   .cases__wrapper {
     display: block; }
+  .cases__title {
+    text-align: center; }
   .cases__image {
     width: 200px;
     margin: 0 auto;
-    margin-bottom: 25px; }
+    margin-bottom: -15px; }
     .cases__image--first {
-      margin-bottom: 25px; }
+      margin-bottom: -15px; }
   .cases__content {
     width: 100%;
-    margin-bottom: 45px; }
+    margin-bottom: 45px;
+    padding-top: 30px;
+    text-align: center; }
     .cases__content:last-child {
       margin-bottom: 0; }
   .cases__heading {
