@@ -4315,6 +4315,8 @@ template {
     font-size: calc(16px + 2vw); }
   .flutter-advantages__wrapper {
     display: block; }
+    .flutter-advantages__wrapper::after {
+      bottom: -55px; }
   .flutter-advantages__main {
     width: 100%;
     margin-right: 0; }

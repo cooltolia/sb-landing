@@ -212,6 +212,10 @@
 
         &__wrapper {
             display: block;
+
+            &::after {
+                bottom: -55px;
+            }
         }
 
         &__main {
