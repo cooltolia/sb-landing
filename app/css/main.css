@@ -3744,7 +3744,7 @@ template {
     -ms-grid-column: 4;
     -ms-grid-column-span: 1; } }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .cases {
     padding-bottom: 80px; }
   .cases__title {
@@ -3776,7 +3776,7 @@ template {
     padding: 20px;
     margin: 0; } }
 
-@media (max-width: 1200px) and (-ms-high-contrast: none) {
+@media (max-width: 1280px) and (-ms-high-contrast: none) {
   .cases__wrapper {
     display: -ms-grid;
     -ms-grid-columns: 250px 1fr;
@@ -3956,7 +3956,7 @@ template {
             box-shadow: -10px 34px 74px rgba(144, 50, 238, 0.3), 10px 14px 44px rgba(255, 0, 0, 0.3);
     border-radius: 50%; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .certificate__ball-decor {
     width: 98px;
     height: 98px;
@@ -4086,6 +4086,563 @@ template {
     .discount__timer {
       max-width: none; } }
 
+.flutter-advantages {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 90px;
+  font-family: "Roboto Mono", Helvetica, Arial, sans-serif; }
+  .flutter-advantages__title {
+    margin: 0 0 35px;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #1f0e42; }
+  .flutter-advantages__wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+    .flutter-advantages__wrapper::after {
+      content: '';
+      position: absolute;
+      left: 15px;
+      width: -webkit-calc(100% - 30px);
+      width: -moz-calc(100% - 30px);
+      width: calc(100% - 30px);
+      height: 25px;
+      background: url(https://skill-branch.ru/_nuxt/img/b461c1c.svg) 50% 50% repeat-x;
+      background-size: 100%;
+      width: 100%;
+      left: 0;
+      bottom: -75px; }
+  .flutter-advantages__main {
+    position: relative;
+    z-index: 2;
+    width: 60%;
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .flutter-advantages__main::after {
+      content: '';
+      position: absolute;
+      width: 160px;
+      height: 100%;
+      right: -20px;
+      top: 0;
+      background-color: #ffffff;
+      -webkit-clip-path: polygon(0% 0%, 0% 0%, 100% 50%, 0% 100%, 0% 100%);
+              clip-path: polygon(0% 0%, 0% 0%, 100% 50%, 0% 100%, 0% 100%); }
+  .flutter-advantages__decor {
+    content: '';
+    position: absolute;
+    width: 275px;
+    height: 100%;
+    top: 0;
+    right: -138px;
+    z-index: 1; }
+    .flutter-advantages__decor svg {
+      width: 100%;
+      height: 100%; }
+  .flutter-advantages__list {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    list-style: none;
+    padding: 40px 40px 40px 0; }
+  .flutter-advantages__item {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 24px; }
+    .flutter-advantages__item:last-child {
+      margin-bottom: 0; }
+    .flutter-advantages__item:nth-child(1), .flutter-advantages__item:nth-child(5) {
+      max-width: 85%; }
+    .flutter-advantages__item:nth-child(2), .flutter-advantages__item:nth-child(4) {
+      max-width: 92%; }
+  .flutter-advantages__icon {
+    -webkit-box-flex: 0;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    position: relative;
+    width: 80px;
+    height: 70px;
+    margin-right: 15px; }
+    .flutter-advantages__icon svg {
+      position: absolute;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+         -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+  .flutter-advantages__heading {
+    margin: 0 0 5px;
+    color: #1f0e42;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 700; }
+  .flutter-advantages__text {
+    margin: 0;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    color: #9ca9ba;
+    font-size: 16px;
+    line-height: 1.5; }
+  .flutter-advantages__aside {
+    position: relative;
+    width: 520px;
+    -webkit-box-flex: 0;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin: 28px 0 28px; }
+  .flutter-advantages__aside-inner {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: end;
+       -moz-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    width: -webkit-calc(100% + 40px);
+    width: -moz-calc(100% + 40px);
+    width: calc(100% + 40px);
+    left: -40px;
+    background-image: url(../images/flutter-advantages/bg.jpg);
+    background-size: cover;
+    border-radius: 20px; }
+  .flutter-advantages__aside-content {
+    max-width: 265px;
+    margin-right: 35px; }
+  .flutter-advantages__subtitle {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 1.25;
+    font-weight: 600; }
+  .flutter-advantages__stack {
+    margin-bottom: 30px; }
+  .flutter-advantages__stack-image {
+    max-width: 100%;
+    margin-bottom: 16px; }
+    .flutter-advantages__stack-image:last-child {
+      margin-bottom: 0; }
+    .flutter-advantages__stack-image img {
+      display: block;
+      width: auto;
+      max-width: 100%; }
+  .flutter-advantages__order {
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 18px;
+    max-width: 250px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    background-image: -webkit-linear-gradient(34.41deg, #ff0800 -15.98%, #ff5e5e 105.02%);
+    background-image: -moz- oldlinear-gradient(34.41deg, #ff0800 -15.98%, #ff5e5e 105.02%);
+    background-image: linear-gradient(55.59deg, #ff0800 -15.98%, #ff5e5e 105.02%);
+    -webkit-box-shadow: 0px 4px 24px rgba(144, 50, 238, 0.2), 0px 4px 14px rgba(255, 0, 0, 0.2);
+            box-shadow: 0px 4px 24px rgba(144, 50, 238, 0.2), 0px 4px 14px rgba(255, 0, 0, 0.2);
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+    width: 100%;
+    max-width: 185px; }
+    .flutter-advantages__order:hover, .flutter-advantages__order:focus {
+      background-image: -webkit-linear-gradient(54.07deg, #ff5954 -15.98%, #ff5e5e 105.02%);
+      background-image: -moz- oldlinear-gradient(54.07deg, #ff5954 -15.98%, #ff5e5e 105.02%);
+      background-image: linear-gradient(35.93deg, #ff5954 -15.98%, #ff5e5e 105.02%);
+      -webkit-box-shadow: 0px 6px 14px rgba(144, 50, 238, 0.2), 0px 8px 14px rgba(255, 0, 0, 0.2);
+              box-shadow: 0px 6px 14px rgba(144, 50, 238, 0.2), 0px 8px 14px rgba(255, 0, 0, 0.2); }
+    .flutter-advantages__order:active {
+      background-image: -webkit-linear-gradient(54.07deg, #ff0800 -15.98%, #da1313 105.02%);
+      background-image: -moz- oldlinear-gradient(54.07deg, #ff0800 -15.98%, #da1313 105.02%);
+      background-image: linear-gradient(35.93deg, #ff0800 -15.98%, #da1313 105.02%);
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    .flutter-advantages__order:hover, .flutter-advantages__order:active, .flutter-advantages__order:focus {
+      text-decoration: none;
+      color: #ffffff; }
+  .flutter-advantages__mobile-decor {
+    display: none; }
+
+@media (max-width: 1280px) {
+  .flutter-advantages__title {
+    margin-bottom: 45px;
+    font-size: -webkit-calc(16px + 2vw);
+    font-size: -moz-calc(16px + 2vw);
+    font-size: calc(16px + 2vw); }
+  .flutter-advantages__wrapper {
+    display: block; }
+  .flutter-advantages__main {
+    width: 100%;
+    margin-right: 0; }
+    .flutter-advantages__main::after {
+      display: none; }
+  .flutter-advantages__decor {
+    width: 100%;
+    height: 150px;
+    top: auto;
+    left: 0;
+    bottom: -60px; }
+    .flutter-advantages__decor svg {
+      -webkit-transform-origin: top left;
+         -moz-transform-origin: top left;
+          -ms-transform-origin: top left;
+              transform-origin: top left;
+      -webkit-transform: rotate(90deg) translateY(-100%);
+         -moz-transform: rotate(90deg) translateY(-100%);
+          -ms-transform: rotate(90deg) translateY(-100%);
+              transform: rotate(90deg) translateY(-100%);
+      width: 150px;
+      height: 930px; }
+  .flutter-advantages__list {
+    padding: 0; }
+  .flutter-advantages__item {
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #e7e7e7; }
+    .flutter-advantages__item:nth-child(n) {
+      max-width: 100%; }
+    .flutter-advantages__item:last-child {
+      border-bottom: none;
+      padding-bottom: 100px; }
+  .flutter-advantages__aside {
+    width: 100%;
+    margin: 0; }
+  .flutter-advantages__aside-inner {
+    position: relative;
+    left: 0;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    -webkit-box-pack: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .flutter-advantages__aside-content {
+    max-width: 80%;
+    margin-right: 0;
+    text-align: center; }
+  .flutter-advantages__stack-image img {
+    margin: 0 auto; }
+  .flutter-advantages__order {
+    margin: 0 auto; } }
+
+@media (max-width: 992px) {
+  .flutter-advantages__item:last-child {
+    padding-bottom: 60px; }
+  .flutter-advantages__decor {
+    height: 100px;
+    bottom: -40px; }
+    .flutter-advantages__decor svg {
+      width: 100px;
+      height: 690px; } }
+
+@media (max-width: 768px) {
+  .flutter-advantages {
+    padding-top: 35px;
+    padding-bottom: 50px; }
+    .flutter-advantages__wrapper::after {
+      width: 100%;
+      left: 0;
+      background-size: cover; }
+    .flutter-advantages__title {
+      margin-bottom: 40px;
+      font-size: 24px;
+      text-align: center; }
+    .flutter-advantages__decor {
+      display: none; }
+    .flutter-advantages__item {
+      display: block;
+      text-align: center;
+      padding-bottom: 30px;
+      margin-bottom: 30px; }
+      .flutter-advantages__item:last-child {
+        padding-bottom: 50px; }
+    .flutter-advantages__heading {
+      margin-bottom: 10px;
+      font-size: 18px; }
+    .flutter-advantages__text {
+      font-size: 16px; }
+    .flutter-advantages__icon {
+      margin: 0 auto 16px; }
+    .flutter-advantages__mobile-decor {
+      display: block;
+      position: absolute;
+      width: -webkit-calc(100% + 20px);
+      width: -moz-calc(100% + 20px);
+      width: calc(100% + 20px);
+      height: auto;
+      bottom: -55px;
+      left: -10px; }
+      .flutter-advantages__mobile-decor svg {
+        width: 100%; }
+    .flutter-advantages__subtitle {
+      font-size: 24px; }
+    .flutter-advantages__aside-inner {
+      padding-top: 80px;
+      padding-bottom: 30px; } }
+
+.flutter-appeal {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 150px;
+  font-family: "Roboto Mono", Helvetica, Arial, sans-serif; }
+  .flutter-appeal::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 266px;
+    height: 266px;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border: 1px solid rgba(172, 170, 170, 0.3);
+    border-radius: 50%; }
+  .flutter-appeal::after {
+    content: '';
+    position: absolute;
+    width: 69px;
+    height: 69px;
+    bottom: -35px;
+    left: -35px;
+    background-image: -webkit-radial-gradient(73.87% 64.15% at 68.32% 38.38%, #ff7171 0%, #ff5555 34.25%, #dd0700 100%);
+    background-image: -moz- oldradial-gradient(73.87% 64.15% at 68.32% 38.38%, #ff7171 0%, #ff5555 34.25%, #dd0700 100%);
+    background-image: radial-gradient(73.87% 64.15% at 68.32% 38.38%, #ff7171 0%, #ff5555 34.25%, #dd0700 100%);
+    -webkit-box-shadow: -10px 34px 74px rgba(144, 50, 238, 0.3);
+            box-shadow: -10px 34px 74px rgba(144, 50, 238, 0.3);
+    border-radius: 50%; }
+  .flutter-appeal__wrapper {
+    position: relative;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ececf1), to(#f5f5f8));
+    background-image: -webkit-linear-gradient(bottom, #ececf1 0%, #f5f5f8 100%);
+    background-image: -moz- oldlinear-gradient(bottom, #ececf1 0%, #f5f5f8 100%);
+    background-image: linear-gradient(0deg, #ececf1 0%, #f5f5f8 100%); }
+  .flutter-appeal__content {
+    width: 55%;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .flutter-appeal__image {
+    position: absolute;
+    z-index: 0;
+    width: 52%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    -webkit-clip-path: polygon(20.5% 0, 6% 100%, 100% 100%, 100% 0);
+            clip-path: polygon(20.5% 0, 6% 100%, 100% 100%, 100% 0); }
+    .flutter-appeal__image::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-image: -webkit-gradient(linear, right top, left top, color-stop(-44.72%, #1C0E42), color-stop(87.88%, #853AFA));
+      background-image: -webkit-linear-gradient(right, #1C0E42 -44.72%, #853AFA 87.88%);
+      background-image: -moz- oldlinear-gradient(right, #1C0E42 -44.72%, #853AFA 87.88%);
+      background-image: linear-gradient(270deg, #1C0E42 -44.72%, #853AFA 87.88%);
+      background-size: cover; }
+    .flutter-appeal__image img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      mix-blend-mode: soft-light; }
+  .flutter-appeal__title {
+    margin: 0 0 20px;
+    font-size: 36px;
+    color: #1f0e42;
+    font-weight: 700; }
+  .flutter-appeal__text {
+    margin: 0 0 25px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    color: #9ca9ba;
+    font-size: 16px;
+    line-height: 1.5; }
+  .flutter-appeal__link {
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 18px;
+    max-width: 250px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    background-image: -webkit-linear-gradient(34.41deg, #ff0800 -15.98%, #ff5e5e 105.02%);
+    background-image: -moz- oldlinear-gradient(34.41deg, #ff0800 -15.98%, #ff5e5e 105.02%);
+    background-image: linear-gradient(55.59deg, #ff0800 -15.98%, #ff5e5e 105.02%);
+    -webkit-box-shadow: 0px 4px 24px rgba(144, 50, 238, 0.2), 0px 4px 14px rgba(255, 0, 0, 0.2);
+            box-shadow: 0px 4px 24px rgba(144, 50, 238, 0.2), 0px 4px 14px rgba(255, 0, 0, 0.2);
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+    position: relative;
+    max-width: 195px;
+    padding-left: 30px; }
+    .flutter-appeal__link:hover, .flutter-appeal__link:focus {
+      background-image: -webkit-linear-gradient(54.07deg, #ff5954 -15.98%, #ff5e5e 105.02%);
+      background-image: -moz- oldlinear-gradient(54.07deg, #ff5954 -15.98%, #ff5e5e 105.02%);
+      background-image: linear-gradient(35.93deg, #ff5954 -15.98%, #ff5e5e 105.02%);
+      -webkit-box-shadow: 0px 6px 14px rgba(144, 50, 238, 0.2), 0px 8px 14px rgba(255, 0, 0, 0.2);
+              box-shadow: 0px 6px 14px rgba(144, 50, 238, 0.2), 0px 8px 14px rgba(255, 0, 0, 0.2); }
+    .flutter-appeal__link:active {
+      background-image: -webkit-linear-gradient(54.07deg, #ff0800 -15.98%, #da1313 105.02%);
+      background-image: -moz- oldlinear-gradient(54.07deg, #ff0800 -15.98%, #da1313 105.02%);
+      background-image: linear-gradient(35.93deg, #ff0800 -15.98%, #da1313 105.02%);
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    .flutter-appeal__link:hover, .flutter-appeal__link:active, .flutter-appeal__link:focus {
+      text-decoration: none;
+      color: #ffffff; }
+    .flutter-appeal__link svg {
+      position: absolute;
+      width: 21px;
+      height: 18px;
+      top: 50%;
+      left: 30px;
+      -webkit-transform: translateY(-50%);
+         -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      fill: currentColor; }
+
+@media (max-width: 1280px) {
+  .flutter-appeal__image {
+    -webkit-clip-path: polygon(23.5% 0, 6% 100%, 100% 100%, 100% 0);
+            clip-path: polygon(23.5% 0, 6% 100%, 100% 100%, 100% 0); } }
+
+@media (max-width: 768px) {
+  .flutter-appeal {
+    margin-bottom: 60px; }
+    .flutter-appeal::before, .flutter-appeal::after {
+      display: none; }
+    .flutter-appeal__image {
+      position: relative;
+      width: 100%;
+      top: 100%;
+      -webkit-clip-path: none;
+              clip-path: none; }
+    .flutter-appeal__content {
+      padding-top: 40px;
+      padding-bottom: 15px;
+      width: 100%; }
+    .flutter-appeal__title {
+      font-size: 24px;
+      text-align: center; }
+    .flutter-appeal__text {
+      font-size: 16px;
+      text-align: center; }
+    .flutter-appeal__link {
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      left: 50%;
+      top: 140%;
+      -webkit-transform: translateX(-50%);
+         -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); } }
+
+.flutter-process {
+  padding-top: 65px;
+  padding-bottom: 100px;
+  font-family: "Roboto Mono", Helvetica, Arial, sans-serif; }
+  .flutter-process__title {
+    margin: 0 0 65px;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #1f0e42; }
+  .flutter-process__image {
+    width: 100%; }
+    .flutter-process__image img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%; }
+
+@media (max-width: 1280px) {
+  .flutter-process__title {
+    margin-bottom: 45px;
+    font-size: -webkit-calc(16px + 2vw);
+    font-size: -moz-calc(16px + 2vw);
+    font-size: calc(16px + 2vw); } }
+
+@media (max-width: 768px) {
+  .flutter-process {
+    padding-top: 25px;
+    padding-bottom: 40px; }
+    .flutter-process__title {
+      margin-bottom: 25px;
+      font-size: 24px;
+      text-align: center; } }
+
 .inner {
   position: relative;
   width: 100%;
@@ -4106,9 +4663,9 @@ template {
   .inner {
     max-width: 960px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .inner {
-    max-width: 1170px; } }
+    max-width: 1230px; } }
 
 .prefooter-advantages {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -4440,7 +4997,7 @@ template {
        -moz-transform: rotate(360deg);
             transform: rotate(360deg); } }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .prefooter__date {
     top: -220px;
     right: -20%;
@@ -4782,7 +5339,7 @@ template {
 .top-screen {
   padding-top: 200px;
   padding-bottom: 120px;
-  background-image: url("../images/top-screen/bg.jpg");
+  background-image: url("../images/top-screen/bg_flutter.jpg");
   background-size: cover;
   font-family: "Roboto Mono", Helvetica, Arial, sans-serif; }
   .top-screen .logo-new {
@@ -5036,7 +5593,7 @@ template {
        -moz-transform: rotate(360deg);
             transform: rotate(360deg); } }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .top-screen {
     overflow: hidden; }
     .top-screen .login-wrap {

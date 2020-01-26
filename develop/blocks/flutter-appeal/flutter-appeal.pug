@@ -1,0 +1,26 @@
+mixin flutter-appeal()
+    +b.SECTION.flutter-appeal
+        +e.wrapper
+            +inner
+                +e.content
+                    +e.H2.title Telegram-чат по Flutter
+                    +e.P.text Чат, в котором люди совместно изучают Flutter и Dart. Здесь вы можете задать вопросы, получить ответы и ценные советы. Welcome!
+                    +e.A.link(href='#') 
+                        +icon('telegram')
+                        | Перейти
+            +e.image
+                picture
+                    source(
+                        srcset='images/flutter-appeal/desktop.jpg'
+                        media='(min-width: 992px)'
+                    )
+                    //- source(
+                    //-     srcset=images.tablet
+                    //-     media='(min-width: 768px)'
+                    //- )
+                    img(
+                        src='images/flutter-appeal/mobile.jpg'
+                        alt=""
+                    )
+                +e.background
+

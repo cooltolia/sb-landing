@@ -1,0 +1,47 @@
+.flutter-process {
+    padding-top: 65px;
+    padding-bottom: 100px;
+
+    font-family: $font;
+
+    &__title {
+        margin: 0 0 65px;
+
+        font-size: 50px;
+        line-height: 1.2;
+        color: $main-color;
+    }
+
+    &__image {
+        width: 100%;
+
+        img {
+            @include img
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .flutter-process {
+        &__title {
+            margin-bottom: 45px;
+
+            font-size: calc(16px + 2vw);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .flutter-process {
+        padding-top: 25px;
+        padding-bottom: 40px;
+        
+        &__title {
+            margin-bottom: 25px;
+
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+}
+
