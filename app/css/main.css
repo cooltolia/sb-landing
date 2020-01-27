@@ -4450,7 +4450,13 @@ template {
       font-size: 24px; }
     .flutter-advantages__aside-inner {
       padding-top: 80px;
-      padding-bottom: 30px; } }
+      padding-bottom: 30px; }
+    .flutter-advantages__stack-image {
+      margin: 0 auto 16px; }
+      .flutter-advantages__stack-image--flutter {
+        width: 102px; }
+      .flutter-advantages__stack-image--dart {
+        width: 84px; } }
 
 .flutter-appeal {
   position: relative;
