@@ -4573,8 +4573,8 @@ template {
       color: #ffffff; }
     .flutter-appeal__link svg {
       position: absolute;
-      width: 21px;
-      height: 18px;
+      width: 25px;
+      height: 24px;
       top: 50%;
       left: 50px;
       -webkit-transform: translateY(-50%);
@@ -4591,6 +4591,8 @@ template {
 @media (max-width: 768px) {
   .flutter-appeal {
     margin-bottom: 60px; }
+    .flutter-appeal__wrapper .inner {
+      position: static; }
     .flutter-appeal::before, .flutter-appeal::after {
       display: none; }
     .flutter-appeal__image {
@@ -4614,7 +4616,7 @@ template {
       width: 100%;
       z-index: 1;
       left: 50%;
-      top: 140%;
+      bottom: 52px;
       -webkit-transform: translateX(-50%);
          -moz-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
