@@ -94,7 +94,6 @@
     &__link {
         @include btn-theme(bright);
         position: relative;
-        max-width: 195px;
 
         padding-left: 30px;
 
@@ -103,7 +102,7 @@
             width: 21px;
             height: 18px;
             top: 50%;
-            left: 30px;
+            left: 50px;
             transform: translateY(-50%);
 
             fill: currentColor;

@@ -48,6 +48,7 @@
 
     &__button {
         @include btn-theme(bright);
+        width: 100%;
     }
 
     &__image {
