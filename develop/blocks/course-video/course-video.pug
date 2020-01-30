@@ -1,0 +1,11 @@
+mixin course-video()
+    +b.SECTION.course-video
+        +inner
+            +e.wrapper
+                +e.poster
+                    +e.poster-data
+                        +e.BUTTON.play(type='button')
+                            include ../../../app/images/course-video/play.svg
+                        +e.poster-title Посмотрите видео о курсе
+                +e.video
+                    video(src="images/course-video/video.mp4" controls='')
