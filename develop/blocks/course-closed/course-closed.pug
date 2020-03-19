@@ -1,0 +1,20 @@
+mixin course-closed()
+    +b.SECTION.course-closed
+        +inner
+            +e.content
+                +e.H2.title Преимущества Flutter
+                +e.P.description Заполни простую форму и мы вышлем тебе 5 закрытых видео с курса Middle Android Developer (Coordinator Layout, Sealed and Data classes, Extension functions, RxJava, MVP)
+                +e.FORM.form
+                    +e.form-body
+                        +e.input-row
+                            +e.input-block
+                                +e.INPUT.input(type='text' name='name' placeholder='Имя')
+                        +e.input-row
+                            +e.input-block.--half
+                                +e.INPUT.input(type='text' name='phone' placeholder='Телефон')
+                            +e.input-block.--half
+                                +e.INPUT.input(type='email' name='email' placeholder='E-mail')
+                    +e.form-footer
+                        +e.BUTTON.submit(type='submit') Отправить
+                        +e.P.legal Нажимая на кнопку вы соглашаетесь с условиями обработки персональных данных
+
